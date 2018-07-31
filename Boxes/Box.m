@@ -22,4 +22,17 @@
 - (float)volume{
     return self.length*self.width*self.height;
 }
+
+- (int)compareBoxes:(Box*)box2{
+    volume1 = [self volume];
+    volume2 = [box2 volume];
+    
+    if(volume1 > volume2) {
+        return (volume1/volume2);
+    } else {
+        return (volume2/volume1);
+    }
+}
+
+
 @end

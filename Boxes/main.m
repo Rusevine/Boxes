@@ -19,6 +19,10 @@ int main(int argc, const char * argv[]) {
         
         NSLog(@"%0.2f",v1);
         NSLog(@"%0.2f",v2);
+        
+        int fits = [b1 compareBoxes:b2];
+        
+        NSLog(@"The smaller box fits %d times.", fits);
     }
     return 0;
 }
